@@ -1,0 +1,100 @@
+
+/*#F2545B*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F7F0;
+    
+}
+
+header {
+    display: flex;
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #19323C;
+    color: white;
+    font-family: 'Atma', cursive;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header i {
+    padding: 20px;
+    font-size: 2rem;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 150%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.video-container {
+    display: block;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.banner {
+    background: rgba(25, 50, 60, 0.5);
+    color: #F3F7F0;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    
+}
+
+h1 {
+    font: 4rem 'Atma', cursive;
+    padding-top: 100px;
+}
+
+p {
+    font: 1rem 'Catamaran', sans-serif;
+
+}
+
+.card {
+    float: right;
+    width: 20%;
+    height: 60%;
+    background-color: #F3F7F0;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 20px;
+    margin-right: 15%;
+}
+
+.card p {
+    color: #19323C;
+    height: 80%;
+}
+
+.card button {
+    border: none;
+    background-color: #F2545B;
+    font: 1rem 'Catamaran', sans-serif;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
