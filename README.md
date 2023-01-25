@@ -1,2 +1,2 @@
-# capricious-garden
+# Capricious | Garden Centre Site
  
