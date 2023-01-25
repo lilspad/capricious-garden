@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Catamaran', sans-serif;
 }
 
 body {
@@ -16,21 +17,51 @@ header {
     position: fixed;
     margin-top: 0;
     width: 100%;
-    height: auto;
+    height: 8%;
     background-color: #19323C;
     color: white;
     font-family: 'Atma', cursive;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-header div {
+.logo {
     display: flex;
     align-items: center;
+    width: 85%;
 }
 
-header i {
+.logo i {
     padding: 20px;
     font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #19323C;
+    height: 50%;
+    width: 10%;
+    margin: 25px;
+    overflow: hidden;
+    text-align: center;
+    justify-self: end;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+
+.menu h3 {
+    margin-bottom: 20px;
+}
+
+.menu:hover {
+    height: 280%;
+}
+
+.menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 50px;
 }
 
 video {
@@ -69,7 +100,7 @@ h1 {
 }
 
 p {
-    font: 1rem 'Catamaran', sans-serif;
+    font-size: 1rem;
 
 }
 
@@ -87,14 +118,61 @@ p {
 .card p {
     color: #19323C;
     height: 80%;
+    margin: 5%;
 }
 
-.card button {
+button {
     border: none;
-    background-color: #F2545B;
-    font: 1rem 'Catamaran', sans-serif;
-    color: white;
+    background-color: #F9A03F;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F3F7F0;
+    padding: 12px 40px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #501537;
+}
+
+footer {
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+table {
+    width: 80%;
+    height: 50%;
+    margin: auto;
     padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.join {
+    border: none;
     border-radius: 3px;
-    
+    padding: 5px 25px;
+}
+
+#input {
+    padding-right: 100px;
+}
+
+#join {
+    background-color: #F9A03F;
+    color: #F3F7F0;
+}
+
+#join:hover {
+    background-color: #501537;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px;
 }
