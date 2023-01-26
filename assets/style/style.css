@@ -22,6 +22,7 @@ header {
     color: white;
     font-family: 'Atma', cursive;
     justify-content: space-around;
+    z-index: 5;
 }
 
 .logo {
@@ -46,7 +47,6 @@ header {
     text-align: center;
     justify-self: end;
     border-radius: 5px;
-    transition: all 0.8s;
 }
 
 .menu h3 {
@@ -54,7 +54,7 @@ header {
 }
 
 .menu:hover {
-    height: 200px;
+    height: fit-content;
 }
 
 .menu nav {
@@ -78,7 +78,6 @@ video {
 }
 
 .video-container {
-    display: block;
     width: 100vw;
     overflow: hidden; 
 }
@@ -98,25 +97,22 @@ h1 {
     padding-top: 100px;
 }
 
-p {
-    font-size: 1.2rem;
-
-}
-
 .card {
     float: right;
-    width: 40%;
+    width: 30%;
     height: 60%;
     background-color: #F3F7F0DD;
     border-radius: 5px;
     margin: 40px;
     margin-right: 10%;
+    padding: 20px;
 }
 
 .card p {
     color: #19323C;
     height: 25%;
-    padding: 50px;
+    padding: 40px;
+    font-size: 1.2rem;
 }
 
 button {
@@ -134,17 +130,116 @@ button:hover {
     background-color: #501537;
 }
 
-footer {
-    margin-bottom: 0;
+.shop-items {
+    padding: 20px;
+    font-family: 'Catamaran', sans-serif;
+    color: #19323C;
+}
+
+.shop-items h2, h3 {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.plants {
+    height: 80%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.indoor, .outdoor {
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: #19323C88;
+    color: white;
+    line-height: 200px;
+    vertical-align: middle;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.container:hover {
+    background-color: #501537DD;
+}
+
+.type {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    margin: auto;
     padding: 20px;
 }
 
-table {
+
+footer {
+    background-color: #eaf1e4;
+    position: absolute;
+    z-index: -10;
     width: 100%;
-    height: 40%;
-    margin: auto;
-    padding: 10px;
+}
+
+footer img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+.img-container {
+    position: absolute;
+    z-index: -2;
+    background-color: #19323C;
+    height: 100%;
+    width: 50%;
+}
+
+table {
+    width: fit-content;
+    height: 60%;
     text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 20px 20px;
+    width: 25%;
+    vertical-align: top;
+}
+
+.visit, .join-col {
+    color: white;
+}
+
+.left {
+    text-align: left;
+    padding: 10px;
+}
+
+.info {
+    font-size: 0.8rem;
 }
 
 table nav {
@@ -152,26 +247,15 @@ table nav {
     flex-direction: column;
 }
 
-td {
-    width: 20%;
-}
-
-td p {
-    padding: 20px;
-}
-
-ul {
-    list-style-type: none;
-}
 
 .join {
     border: none;
     border-radius: 3px;
-    padding: 5px 25px;
+    padding: 5px 20px;
 }
 
 #input {
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 #join {
@@ -183,9 +267,16 @@ ul {
     background-color: #501537;
 }
 
+.map {
+    display:flex;
+    border: 4px solid #eaf1e4;
+    border-radius: 5px;
+}
+
 
 .copyright {
-    text-align: center;
+    text-align: right;
     font-size: 0.8rem;
-    margin: 10px;
+    margin: 0px 20px;
+    margin-bottom: 0;
 }
