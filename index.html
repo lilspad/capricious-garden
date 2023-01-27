@@ -5,8 +5,8 @@
   <head>
 
     <title>Capricious | Garden Centre</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <link rel="icon" href="assets/media/favicon.png" />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="icon" href="src/media/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +17,15 @@
   </head>
 
   <body>
-    <header>
-        <div class="logo">
-            <i class="fa-brands fa-pagelines"></i>
-            <h2>CAPRICIOUS</h2>
-        </div>
-        <div class="menu">
-            <h3><i class="fa-solid fa-bars"></i></h3>
-            <nav>
-                <a>PLANTS</a>
-                <a>SUPPLIES</a>
-                <a>CLASSES</a>
-                <a>CONTACT</a>
-                <a>ABOUT US</a>
-                <a>PARTNERS</a>
-            </nav>
-        </div>
+
+    <header id="header">
     </header>
 
     <div class="main">
         <div class="banner" >
             <div class="video-container">
             <video autoplay muted loop id="myVideo">
-                <source src="assets/media/sensitiveplant.mov" type="video/mp4" loop="true" >
+                <source src="src/media/sensitiveplant.mp4" type="video/mp4" loop="true" >
             </video>
             </div>
 
@@ -51,7 +37,7 @@
             </p>
             <p>
                 We want to share our love and care for gardening, so as well as offering tips and guidance to anyone passing by, we hold regular garden classes both for 
-                amateers and seasoned planters!
+                amateurs and seasoned planters!
             </p>
             <button>Find out more ></button>
         </div>
@@ -59,50 +45,48 @@
     </div>
 
     <div class="shop-items">
-        <h2>PLANTS</h2>
+        <h1>HAVE A LOOK AT OUR INVENTORY</h1>
 
         <div class="plants box">
 
             <div class="indoor box" >
 
-                <h2>Indoor by care</h2>
+                <h2>Indoor:</h2>
 
                 <div class="type box">
 
                     <div class="easycare container">
                         <a>
-                            <img src="assets/media/easy.jpg">
+                            <img src="src/media/easy.jpg">
                             <h3>EASYCARE</h3>
                         </a>
                     </div>
                     <div class="fussy container" >
                         <a>
-                            <img src="assets/media/fussy.jpg">
+                            <img src="src/media/fussy.jpg">
                             <h3>FUSSY</h3>
                         </a>
                     </div>
 
                 </div>
 
-                <h2>Or by type</h2>
-
                 <div class="type box">
 
                     <div class="flowering container">
                         <a>
-                            <img src="assets/media/flowering.jpg">
+                            <img src="src/media/flowering.jpg">
                             <h3>FLOWERING</h3>
                         </a>
                     </div>
                     <div class="foliage container" >
                         <a>
-                            <img src="assets/media/foliage.jpg">
+                            <img src="src/media/foliage.jpg">
                             <h3>FOLIAGE</h3>
                         </a>
                     </div>
                     <div class="succulent container" >
                         <a>
-                            <img src="assets/media/succu.jpg" >
+                            <img src="src/media/succu.jpg" >
                             <h3>SUCCULENTS & CACTI</h3>
                         </a>
                         
@@ -113,25 +97,25 @@
 
             <div class="outdoor box">
 
-                <h2>Outdoor</h2>
+                <h2>Outdoor:</h2>
 
                 <div class="type box">
 
                     <div class="seasonal container">
                         <a>
-                            <img src="assets/media/seasonal.jpg" >
+                            <img src="src/media/seasonal.jpg" >
                             <h3>SEEDS</h3>
                         </a>
                     </div>
                     <div class="perennial container">
                         <a>
-                        <img src="assets/media/perennial.jpg" >
+                        <img src="src/media/perennial.jpg" >
                         <h3>PERENNIAL</h3>
                         </a>
                     </div>
                     <div class="ornamental container">
                         <a>
-                            <img src="assets/media/ornamental.jpg">
+                            <img src="src/media/ornamental.jpg">
                             <h3>ORNAMENTAL</h3>
                         </a>
                     </div>
@@ -139,25 +123,25 @@
                 </div>
 
                     
-                <h2>Supplies</h2>
+                <h2>Supplies:</h2>
 
                 <div class="type box">
 
                     <div class="pots container">
-                        <a>
-                            <img src="assets/media/pots.jpg" >
+                        <a href="src/html/supplies/pots.html">
+                            <img src="src/media/pots.jpg" >
                             <h3>POTS</h3>
                         </a>
                     </div>
                     <div class="tools container" >
-                        <a>
-                            <img src="assets/media/tools.jpg">
+                        <a href="src/html/supplies/tools.html">
+                            <img src="src/media/tools.jpg">
                             <h3>TOOLS</h3>
                         </a>
                     </div>
                     <div class="substrate container" >
-                        <a>
-                            <img src="assets/media/substrate.jpg">
+                        <a href="src/html/supplies/substrate.html">
+                            <img src="src/media/substrate.jpg">
                             <h3>SUBSTRATE & FOOD</h3>
                         </a>
                     </div>
@@ -173,7 +157,7 @@
     <footer>
 
         <div class="img-container" >
-            <img src="assets/media/indoor1.jpg" />
+            <img src="src/media/indoor1.jpg" />
         </div>
 
         <table>
@@ -232,6 +216,8 @@
         <p class="copyright"> © 2023 Lily Paczesniak </p>
     </footer>
 
+    <script type="text/javascript" src="src/script/header.js"></script>
+    <script type="text/javascript" >document.getElementById('logo').href = 'index.html';</script>
   </body>
 
 </html>
