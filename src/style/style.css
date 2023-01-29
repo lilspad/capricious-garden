@@ -80,10 +80,17 @@ header {
     margin-top: 20px;
 }
 
+.main {
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+}
+
 .video-container {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    z-index: -5;
     overflow: hidden;
     object-fit: cover;
 }
@@ -104,20 +111,18 @@ header {
     color: #F3F7F0;
     height: 100vh;
     width: 100vw;
-    text-align: left;
-    
-    
+    text-align: left; 
 }
 
 .banner h1 {
     font: 4rem 'Atma', cursive;
-    padding: 90px 0 0 100px;
+    padding: 30px 0 0 100px;
 }
 
 .card {
     float: left;
     width: 40%;
-    height: 40%;
+    height: 45%;
     background-color: #F3F7F088;
     border-radius: 5px;
     margin-left: 100px;
@@ -127,11 +132,11 @@ header {
 .card p {
     color: #19323C;
     height: 40%;
-    padding: 20px 40px;
+    padding: 25px 50px;
     font-size: 1.2rem;
 }
 
-button {
+.button {
     border: none;
     background-color: #F9A03F;
     font-size: 1rem;
@@ -142,7 +147,7 @@ button {
     transition: all 0.5s;
 }
 
-button:hover {
+.button:hover {
     background-color: #501537;
 }
 
@@ -213,7 +218,7 @@ footer {
     position: absolute;
     z-index: -10;
     width: 100%;
-    margin-top: 100vh;
+    margin-bottom: 0;
 }
 
 footer img {
@@ -279,6 +284,7 @@ table nav {
 #join {
     background-color: #F9A03F;
     color: #F3F7F0;
+    transition: all 0.5s;
 }
 
 #join:hover {
