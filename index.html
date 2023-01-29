@@ -4,6 +4,8 @@
 
   <head>
 
+    <meta charSet="UTF-8" />
+
     <title>Capricious | Garden Centre</title>
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="icon" href="src/media/favicon.png" />
@@ -31,6 +33,7 @@
 
         <h1>WE LOVE THE FUSS.</h1>
         <div class="card" >
+
             <p>
                 At Capricious we like our plants a little dramatic. Didn't get watered today? Wilt. A bit of a draft? Curl. All these theatrics are actually clear
                 and effective communication that helps us understand their needs and respond accordingly. That's our secret to a centre full of healthy, happy babies.
@@ -39,7 +42,8 @@
                 We want to share our love and care for gardening, so as well as offering tips and guidance to anyone passing by, we hold regular garden classes both for 
                 amateurs and seasoned planters!
             </p>
-            <button>Find out more ></button>
+            <a class="button" href="src/html/classes.html"> Find out more </a>
+
         </div>
         </div>
     </div>
@@ -154,70 +158,13 @@
 
     </div>
 
-    <footer>
-
-        <div class="img-container" >
-            <img src="src/media/indoor1.jpg" />
-        </div>
-
-        <table>
-        <tbody>
-            <tr>
-
-                <th class="join-col"> <h3>Join our community</h3></th>
-
-                <th> <h3 class="visit">Visit us!</h3> </th>
-
-                <td rowspan="3">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.878355244242!2d-0.29776168407273323!3d51.478747120618436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760dc5605b3443%3A0xd16f914f6291fb7e!2sRoyal%20Botanic%20Gardens%2C%20Kew!5e0!3m2!1sen!2suk!4v1674689899175!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </td>
-
-                <th class="info"> <h3>Information</h3> </th>
-                
-            </tr>
-            <tr>
-
-                <td>
-                    <p class="join-col">Join our newsletter to receive weekly plantcare tips, classes calendar and special offers.</p>
-                    <p class="join-col left">Email address:</p>
-                    <input class="join" id="input" type="text"><input class="join" id="join" type="submit" value="Join!">
-                    
-                </td>
-
-                <td class="visit"> <p>We're open: <br> Mon-Fri 8am - 6pm <br> Sat-Sun 10am - 8pm</p> </td>
-
-                <td class="info" >
-                    <nav>
-                        <a>Contact</a>
-                        <a>FAQ</a>
-                        <a>T&Cs</a>
-                        <a>Privacy Policy</a>
-                    </nav>
-                </td>
-                
-            </tr>
-            <tr>
-
-                <td></td>
-
-                <td class="visit"> Capricious Garden Centre <br> 23-27 Fickle Avenue <br> NE6 1CG, Garden City </td>
-
-                
-
-                <td class="info"> 020 456 789 <br> customerservice@capricious.co.uk </td>
-
-            </tr>
-
-        </tbody>
-        </table>
-
-        <p class="copyright"> © 2023 Lily Paczesniak </p>
+    <footer id="footer">
     </footer>
 
     <script type="text/javascript" src="src/script/header.js"></script>
     <script type="text/javascript" >document.getElementById('logo').href = 'index.html';</script>
+    <script type="text/javascript" src="src/script/footer.js"></script>
+    <script type="text/javascript">document.getElementById('img').setAttribute('href', 'src/media/indoor.jpg')</script>
   </body>
 
 </html>

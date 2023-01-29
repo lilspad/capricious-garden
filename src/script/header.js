@@ -3,13 +3,17 @@ var logo = document.createElement('a');
 logo.classList.add('logo');
 
 logo.id = 'logo';
-logo.href = '';
+logo.href = 'index.html';
 logo.innerHTML = '<i class="fa-brands fa-pagelines" /> <h2>CAPRICIOUS</h2>';
 
 var menu = document.createElement('div');
 menu.classList.add('menu')
 
-menu.innerHTML = '<i class="fa-solid fa-bars" /> <nav class="header-nav" ><a id="plantsa">PLANTS</a><a id="suppliesa">SUPPLIES</a><a id="classesa">CLASSES</a><a id="contacta">CONTACT</a><a>ABOUT US</a><a>PARTNERS</a></nav>';
+menu.innerHTML = '<i class="fa-solid fa-bars" /> <nav class="header-nav" ><a href="/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/html/plants/plants.html">PLANTS</a>' + 
+'<a href="/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/html/supplies/supplies.html">SUPPLIES</a>' + 
+'<a>CLASSES</a>' + 
+'<a>CONTACT</a><a>ABOUT US</a>' +
+'<a href="/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/html/supplies/partners.html">PARTNERS</a></nav>';
 
 document.getElementById('header').appendChild(logo);
 document.getElementById('header').appendChild(menu);
