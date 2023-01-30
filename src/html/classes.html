@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <title> Capricious | Classes </title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/secondary.css" />
+    <link rel="icon" href="../media/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;500&family=Catamaran:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/349bd4180c.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <header id="header">
+    </header>
+
+    <div class="main">
+
+        <div class="secondary">
+            <div class="img-container"><img src="../media/classes.jpg"></div>
+            <h2>SHARING IS CARING</h2>
+            <p>Our love for plants extends beyond the walls of our garden centre. We take every opportunity to share our knowledge
+            and help every plant parent care for their babies the best they can. To make even more plants happy, we've accomadated 
+            many, many classes for begginners and advanced plant parents alike. Want to help your plants thrive? Pop over to any of 
+            the listed classes - no need to register or book, we can sign you up on site! </p>
+        </div>
+    </div>
+    <div class="events">
+        <div class="tertiary side">
+                
+            <div id="calendar" class="calendar">
+            </div> 
+
+            <p id="copyright">Color Calendar by PawanKolhe</p>
+
+        </div>
+
+        <div class="tertiary full">
+            <div id="events-display" class="events-display">
+            </div>
+        </div>
+    </div>    
+
+    <footer id="footer">
+    </footer>
+
+    <script type="text/javascript" src="../script/header.js"></script>
+    <script type="text/javascript" >document.getElementById('logo').href = '../../index.html';</script>
+    <script type="text/javascript" src="../script/footer.js"></script>
+    <script type="text/javascript">
+        const eventsFeb = [
+            {start: '2023-02-01T16:00:00', end: '2023-02-01T17:30:00', name: 'Terrariums 101', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-04T10:00:00', end: '2023-02-04T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-04T13:00:00', end: '2023-02-04T14:30:00', name: 'Terrariums 101', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-05T10:00:00', end: '2023-02-05T12:00:00', name: 'Orchid Care', id: 4,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-06T16:30:00', end: '2023-02-06T17:30:00', name: 'How To - Repot', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-08T16:00:00', end: '2023-02-08T17:30:00', name: 'Terrariums 201', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-09T10:00:00', end: '2023-02-09T12:00:00', name: 'Orchid Care', id: 4,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-09T16:00:00', end: '2023-02-09T18:00:00', name: 'In Depth - Substrate', id: 6,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-11T10:00:00', end: '2023-02-11T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-11T13:00:00', end: '2023-02-11T14:30:00', name: 'Terrariums 201', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-13T16:30:00', end: '2023-02-13T17:30:00', name: 'How to - Not overwater!', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+            {start: '2023-02-15T16:00:00', end: '2023-02-15T17:30:00', name: 'Terrariums 301', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-18T10:00:00', end: '2023-02-18T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-18T13:00:00', end: '2023-02-18T14:30:00', name: 'Terrariums 301', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-19T10:00:00', end: '2023-02-19T12:00:00', name: 'African Violet Care', id: 5,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-20T16:30:00', end: '2023-02-20T17:30:00', name: 'How to - Fertilise', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+            {start: '2023-02-22T16:00:00', end: '2023-02-22T17:30:00', name: 'Terrariums 401', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-23T10:00:00', end: '2023-02-23T12:00:00', name: 'African Violet Care', id: 5,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-23T16:00:00', end: '2023-02-23T18:00:00', name: 'In Depth - Propagation', id: 6,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-25T10:00:00', end: '2023-02-25T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-25T13:00:00', end: '2023-02-25T14:30:00', name: 'Terrariums 401', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-02-27T16:30:00', end: '2023-02-27T17:30:00', name: 'How to - Prune', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+        ];
+
+        new Calendar({
+            id: '#calendar',
+            eventsData: eventsFeb,
+            theme: 'glass',
+            primaryColor: '#F9A03F',
+            headerBackgroundColor: '#F9A03F',
+            borderRadius: '0px',
+            startWeekday: 1,
+            fontFamilyBody: 'Catamaran, sans-serif',
+            disableMonthYearPickers: true,
+            dateChanged: (currentDate, filteredDateEvents) => {
+                const img1 = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/how-to.jpg';
+                const img2 = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/terrarium.jpg';
+                const img3 = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/kid-friendly.jpg';
+                const img4 = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/orchids.jpg';
+                const img5 = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/violets.jpg';
+                const img6 = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/in-depth.jpg';
+
+                document.getElementById('events-display').innerHTML = "";
+
+                if (filteredDateEvents.length === 0 ) {
+
+                    document.getElementById('events-display').innerHTML = "<h3>No events on this date.</h3>";
+
+                };
+
+                for (let i = 0; i < filteredDateEvents.length; i++) {
+
+                    let name = filteredDateEvents[i].name;
+                    let desc = filteredDateEvents[i].desc;
+                    let id = filteredDateEvents[i].id;
+                    let img;
+
+                    switch(id) {
+                        case 1: 
+                            img = img1;
+                            break;
+                        case 2:
+                            img = img2;
+                            break;
+                        case 3: 
+                            img = img3;
+                            break;
+                        case 4:
+                            img = img4;
+                            break;
+                        case 5:
+                            img = img5;
+                            break;
+                        case 6:
+                            img = img6;
+                    }
+
+                    let start = new Date(filteredDateEvents[i].start);
+                    let startMinutes = start.getMinutes();
+                    let end = new Date(filteredDateEvents[i].end);
+                    let endMinutes = end.getMinutes();
+
+                    if (startMinutes <= 9) {
+                        startMinutes = '00';
+                    }
+
+                    if (endMinutes <= 9) {
+                        endMinutes = '00';
+                    }
+
+                    let startTime = start.getHours() + ':' + startMinutes;
+                    let endTime = end.getHours() + ':' + endMinutes;
+
+                    let month = currentDate.getMonth() + 1;
+
+                    let date = currentDate.getDate().toString() + '/' + month.toString();
+
+                    let event = document.createElement('div');
+
+                    event.innerHTML = '<div id="event-title" class="title-card" ><h2>' + name + '</h2></div><h3>' + date + ' | ' + startTime + ' - ' + endTime + '</h3><p>' + desc + '</p>';
+
+                    document.getElementById('events-display').appendChild(event);
+                    document.getElementById('event-title').style.backgroundImage = 'url("'+ img + '")';
+                } 
+            }
+        });
+    </script>
+
+  </body>
+
+  </html>
