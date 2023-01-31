@@ -6,6 +6,7 @@
 
 .secondary h2 {
     padding-top: 20px;
+    font-weight: 700;
 }
 
 .secondary p {
@@ -24,7 +25,7 @@
     color: white;
 }
 
-.secondary img, .tertiary img {
+.secondary img, video, .tertiary img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -134,6 +135,13 @@
     display: flex;
 }
 
+.calendar {
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
 #copyright {
     font-size: 0.5rem;
     color: #19323C;
@@ -142,6 +150,11 @@
 #events-display {
     color: black;
     height: 60vh;
+    margin-top: 5%;
+}
+
+.event h3, .event p {
+    padding: 10px;
 }
 
 .title-card {
@@ -166,7 +179,141 @@
 
 }
 
-.tertiary.mid {
-    width: 40%;
+.main.substrate {
+    display: flex;
+    width: 100vw;
+    height: 188vh;
 }
 
+.substrate-column {
+    height: 100%;
+    width: 50vw;
+    background-color: #F9A03F;
+}
+
+.substrate-column h1 {
+    font-size: 4.5rem;
+}
+
+.substrate.title {
+    height: 90vh;
+    width: 90%;
+    padding: 0 5%;
+    color: white;
+    margin-top: 50px;
+}
+
+.substrate.title p {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.substrate.title a {
+    color:#501537;
+}
+
+.substrate.title a:hover {
+    color: white;
+}
+
+#substrate-banner {
+    width: 50vw;
+    z-index: -10;
+    color: white;
+}
+
+#substrate-banner h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 21vh;
+    padding-top: 105vh;
+}
+
+#substrate-banner p {
+    margin: auto;
+    height: 34vh;
+    font-size: 1.4rem;
+    line-height: 50px;
+    padding: 13vh;
+    background-color: #F3F7F0DD;
+    color:#19323C;
+}
+
+#substrate-banner .img-container {
+    width: 50%;
+    position: fixed;
+}
+
+.mix {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../media/ingredients.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.mix.content {
+    height: 100%;
+    color: white;
+    background: #501537AA;
+}
+
+.mix.content h1 {
+    font-size: 8rem;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.mix.content h2 {
+    width: 60%;
+    padding-left: 20%;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.mix p {
+    height: 18vh;
+    padding: 7vh;
+    background-color: #19323C;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#wood {
+    background-color: #F9A03F;
+    height: 85vh;
+    width: 20vw;
+}
+
+.gallery {
+    width: 40vw;
+    height: 85vh;
+    background-color: #F9A03F;
+    z-index: -100;
+}
+
+.gallery .img-container {
+    position: relative;
+    height: 40vh;
+    width: 90%;
+    overflow: hidden;
+}
+
+.gallery img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 30px solid #F9A03F;
+}
+
+#pot {
+    background-color: #F9A03F;
+    height: 125vh;
+    width: 20vw;
+}
+
+.pots.gallery {
+    height: 125vh;
+}
