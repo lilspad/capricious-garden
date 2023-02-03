@@ -163,7 +163,6 @@ header {
 
 .box {
     display: flex;
-    justify-content: center;
 }
 
 .plants {
@@ -171,6 +170,7 @@ header {
     width: 100%;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
 }
 
 .indoor, .outdoor {
@@ -205,11 +205,10 @@ header {
 
 .type {
     flex-wrap: wrap;
-    justify-content: space-evenly;
     height: 50%;
-    width: 100%;
-    margin: auto;
-    padding: 20px;
+    width: 100vw;
+    padding: 20px 0;
+    justify-content: space-evenly;
 }
 
 
