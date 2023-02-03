@@ -4,7 +4,7 @@ container.classList.add('img-container');
 
 const img = document.createElement('img');
 img.id = 'img'
-img.src = '/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/media/inside1.jpg';
+img.src = 'https://dreamy-meringue-2d3f95.netlify.app/src/media/inside1.jpg';
 
 
 container.appendChild(img);
@@ -20,8 +20,8 @@ var tr2 = document.createElement('tr');
 tr2.innerHTML = '<td><p class="join-col">Join our newsletter to receive weekly plantcare tips, classes calendar and special offers.</p>' +
 '<p class="join-col left">Email address:</p><input class="join" id="input" type="text" /><input class="join" id="join" type="submit" value="Join!" /></td>' +
 '<td class="visit"> <p>We are open: <br /> Mon-Fri 8am - 6pm <br /> Sat-Sun 10am - 8pm</p> </td><td class="info">' +
-'<nav><a href="/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/html/supplies/partners.html">Partners</a>' + 
-'<a href="/Users/lilspad/Desktop/Projects/for-real/capricious-garden/src/html/contact.html">Contact</a>' + 
+'<nav><a href="https://dreamy-meringue-2d3f95.netlify.app/src/html/supplies/partners.html">Partners</a>' + 
+'<a href="https://dreamy-meringue-2d3f95.netlify.app/src/html/contact.html">Contact</a>' + 
 '<a>FAQ</a><a>T&Cs</a><a>Privacy Policy</a></nav></td>';
 
 var tr3 = document.createElement('tr');
