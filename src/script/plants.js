@@ -28,7 +28,30 @@ var easy = ['some', 'easy', 'to care for', 'plants'];
 var fussy = ['some', 'plants', 'that', 'are fussy'];
 
 
-
+for (let i = 0; i < types.length; i++) {
+    types[i].addEventListener('click', () => {
+        switch(types[i].innerText) {
+            case 'ALL':
+                sessionStorage.setItem("currentFilter", indoor);
+                break;
+            case 'EASYCARE':
+                sessionStorage.setItem("currentFilter", easy);
+                break;
+            case 'FUSSY':
+                sessionStorage.setItem("currentFilter", fussy);
+                break;
+            case 'FLOWERING':
+                sessionStorage.setItem("currentFilter", flowering);
+                break;
+            case 'FOLIAGE':
+                sessionStorage.setItem("currentFilter", foliage);
+                break;
+            case 'SUCCULENTS':
+                sessionStorage.setItem("currentFilter", succulents);
+        }
+        display.innerHTML = getCurrentFilter();
+    })
+};
 
 let currentFilter = indoor;
 
