@@ -1,2 +1,3 @@
-# Capricious | Garden Centre Site
+# Capricious | Website
  
+A basic website model for an imaginary garden centre. 
