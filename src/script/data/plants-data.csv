@@ -1,0 +1,50 @@
+id ,name               ,common_name        ,type                    ,foliage ,flowering ,tree ,care_level ,pet_friendly ,price_range
+ 1 ,Alocasia           ,Taro               ,perennial               ,yes     ,no        ,no   ,         2 ,no           ,          3
+ 2 ,Begonia            ,Wax Begonia        ,perennial               ,yes     ,yes       ,no   ,         3 ,no           ,          2
+ 3 ,Calathea           ,Peacock Plant      ,"herbaceous, perennial" ,yes     ,no        ,no   ,         3 ,yes          ,          2
+ 4 ,Aglaonema          ,Chinese Evergreen  ,"herbaceous, perennial" ,yes     ,no        ,no   ,         1 ,no           ,          2
+ 5 ,Codiaeumn          ,Croton             ,shrub                   ,yes     ,no        ,no   ,         2 ,no           ,          2
+ 6 ,Fittonia           ,Nerve Plant        ,perennial               ,yes     ,no        ,no   ,         2 ,yes          ,          1
+ 7 ,Epipremnum         ,Glacier Pothos     ,vine                    ,yes     ,no        ,no   ,         1 ,no           ,          1
+ 8 ,Epipremnum         ,Devil's Ivy        ,vine                    ,yes     ,no        ,no   ,         1 ,no           ,          2
+ 9 ,Monstera           ,Monkey Mask Plant  ,perennial               ,yes     ,no        ,no   ,         2 ,no           ,          2
+10 ,Monstera           ,Swiss Cheese Plant ,perennial               ,yes     ,no        ,no   ,         2 ,no           ,          3
+11 ,Scindapsus         ,Satin Pothos       ,vine                    ,yes     ,no        ,no   ,         1 ,no           ,          3
+12 ,Dracaena           ,Snake Plant        ,perennial               ,yes     ,no        ,no   ,         1 ,no           ,          1
+13 ,Chlorophytum       ,Spider Plant       ,perennial               ,yes     ,no        ,no   ,         1 ,yes          ,          1
+14 ,Aloe Vera          ,Aloe               ,succulent               ,yes     ,no        ,no   ,         1 ,no           ,          1
+15 ,Tradescantia       ,Spiderwort         ,"herbaceous, perennial" ,yes     ,no        ,no   ,         2 ,yes          ,          2
+16 ,Ceropegia          ,String of Hearts   ,"vine, succulent"       ,yes     ,no        ,no   ,         1 ,yes          ,          1
+17 ,Crassula           ,Jade Plant         ,"perennial, succulent"  ,no      ,no        ,yes  ,         1 ,no           ,          1
+18 ,Crassula           ,Jade Necklace      ,"perennial, succulent"  ,no      ,no        ,no   ,         1 ,no           ,          2
+19 ,Crassula           ,Jade Gollum        ,"perennial, succulent"  ,no      ,no        ,yes  ,         1 ,no           ,          2
+20 ,Echeveria          ,Ghost              ,succulent               ,no      ,no        ,no   ,         1 ,yes          ,          1
+21 ,Gastera            ,Ox Tonque          ,succulent               ,no      ,no        ,no   ,         2 ,yes          ,          1
+22 ,Haworthia          ,Zebra cactus       ,succulent               ,no      ,no        ,no   ,         1 ,yes          ,          1
+23 ,Hoya               ,Porcelain Flower   ,succulent               ,yes     ,yes       ,no   ,         1 ,yes          ,          1
+24 ,Kalanchoe          ,Flaming Katy       ,"perrenial, succulent"  ,no      ,yes       ,no   ,         1 ,no           ,          1
+25 ,Peperommia         ,Radiator Plant     ,perennial               ,yes     ,no        ,yes  ,         1 ,yes          ,          2
+26 ,Yucca Elephantipes ,Yucca              ,perennial               ,yes     ,no        ,yes  ,         2 ,no           ,          2
+27 ,Zamioculcas        ,ZZ Plant           ,perennial               ,yes     ,no        ,yes  ,         1 ,no           ,          2
+28 ,Saintpaulia        ,African Violet     ,perennial               ,no      ,yes       ,no   ,         2 ,yes          ,          1
+29 ,Guzmania           ,Bromeliad          ,monocot                 ,yes     ,yes       ,no   ,         1 ,yes          ,          2
+30 ,Curio              ,String of Pearls   ,"succulent, vine"       ,yes     ,no        ,no   ,         1 ,no           ,          1
+31 ,Rhipsalis          ,Mistletoe Cactus   ,succulent               ,yes     ,no        ,no   ,         1 ,yes          ,          2
+32 ,Disocactus         ,Fishbone Cactus    ,cactus                  ,yes     ,no        ,no   ,         1 ,yes          ,          2
+33 ,Opuntia            ,Prickly Pear       ,cactus                  ,no      ,no        ,no   ,         2 ,no           ,          1
+34 ,Schlumbergera      ,Christmas Cactus   ,cactus                  ,no      ,yes       ,no   ,         2 ,yes          ,          1
+35 ,Aspidistra         ,Cast Iron Plant    ,perennial               ,yes     ,no        ,no   ,         1 ,yes          ,          2
+36 ,Schefflera         ,Umbrella Plant     ,perennial               ,yes     ,no        ,no   ,         1 ,no           ,          2
+37 ,Phalaenopsis       ,Moth Orchid        ,evergreen               ,no      ,yes       ,no   ,         2 ,yes          ,          2
+38 ,Cycnoches          ,Swan Orchid        ,evergreen               ,no      ,yes       ,no   ,         2 ,yes          ,          3
+39 ,Ludisia            ,Jewel Orchid       ,evergreen               ,yes     ,yes       ,no   ,         2 ,yes          ,          3
+40 ,Dracaena           ,Lucky Bamboo       ,shrub                   ,no      ,no        ,yes  ,         1 ,yes          ,          1
+41 ,Dracaena           ,Dragon Tree        ,evergreen               ,no      ,no        ,yes  ,         1 ,no           ,          1
+42 ,Ficus              ,Fiddle Leaf Fig    ,evergreen               ,yes     ,no        ,yes  ,         3 ,no           ,          3
+43 ,Ficus              ,Weeping Fig        ,evergreen               ,yes     ,no        ,yes  ,         1 ,no           ,          1
+44 ,Ficus              ,Ginseng            ,evergreen               ,no      ,no        ,no   ,         1 ,no           ,          2
+45 ,Arecaceae          ,Parlour Palm       ,perennial               ,yes     ,no        ,yes  ,         2 ,yes          ,          1
+46 ,Asparagus          ,Asparagus Fern     ,"herbaceous, perennial" ,yes     ,no        ,yes  ,         2 ,no           ,          1
+47 ,Nephrolepis        ,Boston Fern        ,"herbaceous, perennial" ,yes     ,no        ,no   ,         2 ,yes          ,          1
+48 ,Adiantum           ,Maindehair Fern    ,"herbaceous, perennial" ,yes     ,no        ,no   ,         2 ,yes          ,          1
+49 ,Maranta            ,Prayer Plant       ,"evergreen, perennial"  ,yes     ,no        ,no   ,         2 ,yes          ,          2
