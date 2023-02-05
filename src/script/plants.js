@@ -80,8 +80,9 @@ if (sessionStorage.getItem("selection")) {
             case 'SUCCULENTS':
                 currentFilter = succulents;
         }
-}
-
+} else {
+    currentFilter = indoor;
+};
 
 display.innerHTML = "";
 display.appendChild(currentFilter);
