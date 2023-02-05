@@ -8,27 +8,27 @@ var types = document.getElementsByClassName('plant-type');
 
 var indoor = document.createElement('iframe');
 
-indoor.src = '../../script/data/indoor-plants.html';
+indoor.src = '/src/script/data/indoor-plants.html';
 
 var foliage = document.createElement('iframe');
 
-foliage.src = '../../script/data/foliage.html';
+foliage.src = '/src/script/data/foliage.html';
 
 var succulents = document.createElement('iframe');
 
-succulents.src = '../../script/data/succulents.html';
+succulents.src = '/src/script/data/succulents.html';
 
 var flowering = document.createElement('iframe');
 
-flowering.src = '../../script/data/flowering.html';
+flowering.src = '/src/script/data/flowering.html';
 
 var easy = document.createElement('iframe');
 
-easy.src = '../../script/data/easy.html';
+easy.src = '/src/script/data/easy.html';
 
 var fussy = document.createElement('iframe');
 
-fussy.src = '../../script/data/fussy.html';
+fussy.src = '/src/script/data/fussy.html';
 
 
 let defaultSelection = 'ALL';
