@@ -1,82 +1,104 @@
+console.log(sessionStorage)
+
 var display = document.getElementById('plants-display');
 var filters = document.getElementsByClassName('filter');
 var filtersDiv = document.getElementsByClassName('filter-div');
 var types = document.getElementsByClassName('plant-type');
 
-var foliage = ["alocasia", "begonia", "calathea", "chinese evergreen", "croton", "ferns", "fittonia", "indoor trees", "ivy", "maranta", 
-"palms", "philodendron", "pothos", "spider plant"];
-var succulents = ["agave", "aloe", "cacti", "calisia", "ceropegia", "crassula", "echeveria", "gasteria", "haworthia", "hoya", "kalanchoe", "peporomia", 
-"sedum", "senecio", "tradescantia", "yucca"];
 
-var flowering = ["african violet", "bromeliad", "clivia", "crown-of-thorns", "geranium", "kalanchoe", "maracas", "orchids"];
+var indoor = document.createElement('iframe');
 
-var trees = ["citrus", "dracaena", "ficus", "laurels", "pachira", "pine", "yucca"];
-var ferns = ["asparagus", "bird's nest", "blue star", "boston", "maidenhair", "mother", "staghorn"];
+indoor.src = '../../script/data/indoor-plants.html';
 
-/*function createPlant(name, enviroment, type, sizes, pricing) {
-    return {
-        name: name,
-        enviroment: enviroment,
-        type: type,
-        sizes: sizes,
-        pricing: pricing
-    }
-}*/
+var foliage = document.createElement('iframe');
 
-var indoor = [foliage, succulents, flowering];
-var easy = ['some', 'easy', 'to care for', 'plants'];
-var fussy = ['some', 'plants', 'that', 'are fussy'];
+foliage.src = '../../script/data/foliage.html';
 
+var succulents = document.createElement('iframe');
+
+succulents.src = '../../script/data/succulents.html';
+
+var flowering = document.createElement('iframe');
+
+flowering.src = '../../script/data/flowering.html';
+
+var easy = document.createElement('iframe');
+
+easy.src = '../../script/data/easy.html';
+
+var fussy = document.createElement('iframe');
+
+fussy.src = '../../script/data/fussy.html';
+
+
+let defaultSelection = 'ALL';
+let currentFilter;
 
 for (let i = 0; i < types.length; i++) {
     types[i].addEventListener('click', () => {
         switch(types[i].innerText) {
             case 'ALL':
-                sessionStorage.setItem("currentFilter", indoor);
+                sessionStorage.setItem("selection", 'ALL');
                 break;
             case 'EASYCARE':
-                sessionStorage.setItem("currentFilter", easy);
+                sessionStorage.setItem("selection", 'EASYCARE');
                 break;
             case 'FUSSY':
-                sessionStorage.setItem("currentFilter", fussy);
+                sessionStorage.setItem("selection", 'FUSSY');
                 break;
             case 'FLOWERING':
-                sessionStorage.setItem("currentFilter", flowering);
+                sessionStorage.setItem("selection", 'FLOWERING');
                 break;
             case 'FOLIAGE':
-                sessionStorage.setItem("currentFilter", foliage);
+                sessionStorage.setItem("selection", 'FOLIAGE');
                 break;
-            case 'SUCCULENTS':
-                sessionStorage.setItem("currentFilter", succulents);
+            case 'SUCCULENTS & CACTI':
+                sessionStorage.setItem("selection", 'SUCCULENTS');
         }
-        display.innerHTML = getCurrentFilter();
+
     })
 };
 
-let currentFilter = indoor;
-
-const getCurrentFilter = () => {
-    if (sessionStorage.getItem('currentFilter')) {
-        currentFilter = sessionStorage.getItem('currentFilter');
-        return currentFilter;
-    } else {
-        sessionStorage.setItem('currentFilter', currentFilter);
-        return currentFilter;
-    }
+if (sessionStorage.getItem("selection")) {
+    defaultSelection = sessionStorage.getItem("selection");
+    switch(defaultSelection) {
+            case 'ALL':
+                currentFilter = indoor;
+                break;
+            case 'EASYCARE':
+                currentFilter = easy;
+                break;
+            case 'FUSSY':
+                currentFilter = fussy;
+                break;
+            case 'FLOWERING':
+                currentFilter = flowering;
+                break;
+            case 'FOLIAGE':
+                currentFilter = foliage;
+                break;
+            case 'SUCCULENTS':
+                currentFilter = succulents;
+        }
 }
 
-display.innerHTML = getCurrentFilter();
+
+display.innerHTML = "";
+display.appendChild(currentFilter);
 
 for (let i = 0; i < filters.length; i++) {
+
+    if (filters[i].innerText === defaultSelection) {
+        filtersDiv[i].classList.add('default');
+    }
+
     filters[i].addEventListener('click', () => {
 
         for (let j = 0; j < filters.length; j++) {
-            filtersDiv[j].style.backgroundColor = 'inherit';
-            filtersDiv[j].style.color = 'black';
+            filtersDiv[j].classList.remove('selected', 'default')
         }
 
-        filtersDiv[i].style.backgroundColor = '#501537';
-        filtersDiv[i].style.color = 'white';
+        filtersDiv[i].classList.add('selected');
 
         switch(filters[i].innerText) {
             case 'ALL':
@@ -98,7 +120,7 @@ for (let i = 0; i < filters.length; i++) {
                 currentFilter = succulents;
         }
 
-        sessionStorage.setItem('currentFilter', currentFilter);
-        display.innerHTML = getCurrentFilter();
+        display.innerHTML = "";
+        display.appendChild(currentFilter);
     })
 };

@@ -182,38 +182,43 @@
 
 .main.substrate {
     display: flex;
-    width: 100vw;
-    height: 188vh;
+    width: 100%;
+    min-height: fit-content;
+    height: 200vh;
+    padding: 0;
 }
 
 .substrate-column {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 50vw;
     background-color: #F9A03F;
 }
 
-.substrate-column h1, .plants-column h1 {
+.substrate-column h1 {
     font-size: 4.5rem;
+    padding: 0 20px;
 }
 
-.substarte.title, .plants.title {
-    height: 90vh;
-    width: 90%;
-    padding: 0 5%;
+.substarte.title {
+    width: 80%;
     color: white;
-    margin-top: 50px;
+    margin: auto;
 }
 
 .substrate.title p {
     font-size: 1.5rem;
+    width: 90%;
+    margin: auto;
     margin-top: 4rem;
 }
 
-.substrate.title a, .plants.title a {
+.substrate.title a, .plants-text a {
     color:#501537;
 }
 
-.substrate.title a:hover, .plants.title a:hover {
+.substrate.title a:hover, .plants-text a:hover {
     color: white;
 }
 
@@ -226,16 +231,15 @@
 #substrate-banner h2 {
     font-size: 2rem;
     font-weight: 700;
-    height: 21vh;
-    padding-top: 105vh;
+    padding-top: 100vh;
+    padding-bottom: 20px;
 }
 
 #substrate-banner p {
     margin: auto;
-    height: 34vh;
     font-size: 1.4rem;
     line-height: 50px;
-    padding: 13vh;
+    padding: 60px;
     background-color: #F3F7F0DD;
     color:#19323C;
 }
@@ -246,8 +250,6 @@
 }
 
 .mix {
-    width: 100%;
-    height: 60vh;
     background-image: url('../media/ingredients.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -274,11 +276,10 @@
 }
 
 .mix p {
-    height: 18vh;
-    padding: 7vh;
     background-color: #19323C;
     color: white;
-    font-size: 1.5rem;
+    padding: 20px 10%;
+    margin: auto;
 }
 
 #wood {
@@ -322,37 +323,43 @@
 .main.plants {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100vw;
-    height: 155vh;
+    justify-content: stretch;
+    min-height: fit-content;
+    overflow: hidden;
     z-index: -10;
 }
 
 .plants-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%;
-    width: 40vw;
+    width: 35vw;
     background-color: #F9A03F;
+    color: white;
+    padding: 50px 3%;
 }
 
-.plants-column h2 {
-    font-size: 2rem;
+.plants-column h1 {
+    font-size: 3rem;
+}
+
+.plants-column h2, p {
+    font-size: 1.5rem;
     text-align: left;
 }
 
-.plants-column p {
-    font-size: 1.5rem;
-}
 
 .plants-column table {
     text-align: left;
-    height: 10%;
-    margin: 4%;
     font-size: 1rem;
+    height: 50px;
 }
 
 .plant-types {
-    width: 60vw;
-    
+    width: 58vw;
+    background-color: #501537;
+    color: white;
 }
 
 .filter-nav {
@@ -360,6 +367,8 @@
     justify-content: space-evenly;
     width: 100%;
     line-height: 5vh;
+    background-color: #F3F7F0;
+    color: black;
 }
 
 .filter-div {
@@ -374,3 +383,13 @@
     color: white;
 }
 
+.filter-div.selected, .filter-div.default {
+    background-color: #501537;
+    color: white;
+}
+
+.plant-types iframe {
+    width: 100%;
+    height: 114vh;
+    border: 3px solid #501537;
+}
