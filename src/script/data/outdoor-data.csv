@@ -1,0 +1,31 @@
+﻿,name,specification,type,seed,young_plant,mature_plant,care_level,season,price_range
+1,Beetroot,Moulin Rouge,vegetable,yes,no,no,1,spring,0
+2,Aubergine,Violet Lunga,vegetable,yes,no,no,1,spring,0
+3,Broccoli,Green Calbrese,vegetable,yes,no,no,1,spring,0
+4,Cucumber ,Beth Alpha,vegetable,yes,no,no,1,spring,0
+5,Onion,White Lisbon,vegetable,yes,no,no,1,spring,0
+6,Tomato,Beefsteak,vegetable,yes,no,no,2,spring,0
+7,Tomato,Shirley,vegetable,yes,no,no,1,spring,0
+8,Tomato,Sungold,vegetable,yes,no,no,1,spring,0
+9,Rosemary,Salvia rosmarinus,herb,no,yes,no,1,"spring, summer",1
+10,Oregano,Origanum vulgare,herb,no,yes,no,1,"spring, summer",1
+11,Thyme,Silver Queen,herb,no,yes,no,1,"spring, summer",1
+12,Mint,Mentha suaveolens,herb,no,yes,no,1,spring,1
+13,Petunia,Johnny Flame,"flower, bedding",yes,yes,no,1,spring,1
+14,Petunia,Night Sky,"flower, bedding",yes,yes,no,1,spring,1
+15,Geranium,Red,"flower, bedding",yes,yes,no,1,summer,1
+16,Tulip,Van Eijk,bulb,yes,no,no,1,summer,2
+17,Daffodil,Golden Dawn,bulb,yes,no,no,1,summer,2
+18,Hyacinth,White Lisbon,bulb,yes,no,no,1,spring,1
+19,Fern,Hard' Blechnum spicant,fern,no,yes,yes,2,all,2
+20,Lenten Rose,Angel Glow,flower,no,yes,yes,2,all,2
+21,Blue Grass,Compacta Blue,bedding,no,no,yes,1,autumn,1
+22,Winter Berry,Ilex Verticillata,evergreen,no,no,yes,1,winter,2
+23,Cypress,Goldcrest,evergreen,no,yes ,yes,1,winter,3
+24,English Ivy,Gold Child,evergreen,no,no,yes,1,all,1
+25,Austin Roses,Rosa 'Bosocobel',evergreen,no,yes,yes,2,all,2
+26,Hydrangea,Grarland,flower,no,no,yes,2,"spring, summer",2
+27,Eucalyptus,gunni,evergreen,no,yes,no,1,all,2
+28,Olive,standard,evergreen,no,yes,yes,1,all,3
+29,Raspberry,Glen Ample',fruit,no,yes,no,1,summer,2
+30,Persian Cyclamen,Bright Pink,flower,no,yes,no,2,"autumn, winter",1
