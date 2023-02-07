@@ -199,26 +199,28 @@
 .substrate-column h1 {
     font-size: 4.5rem;
     padding: 0 20px;
+    color: white;
 }
 
-.substarte.title {
+#substarte-title {
     width: 80%;
-    color: white;
     margin: auto;
 }
 
-.substrate.title p {
+
+#substrate-title p {
     font-size: 1.5rem;
     width: 90%;
     margin: auto;
     margin-top: 4rem;
+    color: white;
 }
 
-.substrate.title a, .plants-text a {
+#substrate-title a, .plants-text a {
     color:#501537;
 }
 
-.substrate.title a:hover, .plants-text a:hover {
+#substrate-title a:hover, .plants-text a:hover {
     color: white;
 }
 
