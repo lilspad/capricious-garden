@@ -176,7 +176,40 @@
     <script type="text/javascript" src="src/script/outdoor-plants.js"></script>
     <script type="text/javascript"> 
         sessionStorage.clear();
-        console.log(sessionStorage);
+
+        for (let i = 0; i < types.length; i++) {
+    types[i].addEventListener('click', () => {
+        switch(types[i].innerText) {
+            case 'ALL':
+                sessionStorage.setItem("selection", 'ALL');
+                break;
+            case 'EASYCARE':
+                sessionStorage.setItem("selection", 'EASYCARE');
+                break;
+            case 'FUSSY':
+                sessionStorage.setItem("selection", 'FUSSY');
+                break;
+            case 'FLOWERING':
+                sessionStorage.setItem("selection", 'FLOWERING');
+                break;
+            case 'FOLIAGE':
+                sessionStorage.setItem("selection", 'FOLIAGE');
+                break;
+            case 'SUCCULENTS & CACTI':
+                sessionStorage.setItem("selection", 'SUCCULENTS');
+                break;
+            case 'SEEDS':
+                sessionStorage.setItem("selection", 'SEEDS');
+                break;
+            case 'PERENNIAL':
+                sessionStorage.setItem("selection", 'PERENNIAL');
+                break;
+            case 'ORNAMENTAL':
+                sessionStorage.setItem("selection", 'ORNAMENTAL');
+        }
+
+    })
+};
     </script>
   </body>
 
