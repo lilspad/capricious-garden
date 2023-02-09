@@ -19,25 +19,8 @@ var ornamental = document.createElement('iframe');
 ornamental.src = '../../script/data/ornamental.html';
 
 
-let defaultSelection = 'SEEDS';
+let defaultSelection = 'SEEDS & BULBS';
 let currentFilter;
-
-for (let i = 0; i < types.length; i++) {
-    types[i].addEventListener('click', () => {
-        switch(types[i].innerText) {
-            case 'SEEDS':
-                sessionStorage.setItem("selection", 'SEEDS');
-                break;
-            case 'PERENNIAL':
-                sessionStorage.setItem("selection", 'PERENNIAL');
-                break;
-            case 'ORNAMENTAL':
-                sessionStorage.setItem("selection", 'ORNAMENTAL');
-                break;
-        }
-
-    })
-};
 
 if (sessionStorage.getItem("selection")) {
     defaultSelection = sessionStorage.getItem("selection");
@@ -52,8 +35,9 @@ if (sessionStorage.getItem("selection")) {
                 currentFilter = ornamental;
                 break;
         }
+} else {
+    currentFilter = seeds;
 }
-
 
 display.innerHTML = "";
 display.appendChild(currentFilter);
