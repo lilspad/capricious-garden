@@ -86,4 +86,37 @@ SELECT
     END AS 'Care',
     price_range AS 'Price' 
 FROM plants 
-WHERE type LIKE '%succulent%' OR '%cactus%';
+WHERE type LIKE '%succulent%' 
+OR type LIKE '%cactus%';
+
+
+--outdoor_plants queries
+
+--Seeds:
+SELECT
+    name AS 'Name',
+    specification AS 'Kind',
+    season AS 'Season'
+FROM outdoor_plants
+WHERE seed = 'yes';
+
+--Perennials:
+SELECT
+    name AS 'Name',
+    specification AS 'Kind',
+    season AS 'Season'
+FROM outdoor_plants
+WHERE type LIKE '%evergreen%' 
+OR type LIKE '%herb%'
+AND name != 'Mint'
+AND name != 'Oregano';
+
+--Ornamental:
+SELECT
+    name AS 'Name',
+    specification AS 'Kind',
+    season AS 'Season'
+FROM outdoor_plants
+WHERE type LIKE '%flower%'
+OR type LIKE '%bedding%'
+OR type LIKE 'fern';
