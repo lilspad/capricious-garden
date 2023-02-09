@@ -322,7 +322,7 @@
     height: 125vh;
 }
 
-.main.plants {
+.main.plants-page {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
