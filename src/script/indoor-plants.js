@@ -34,31 +34,6 @@ fussy.src = '../../script/data/fussy.html';
 let defaultSelection = 'ALL';
 let currentFilter;
 
-for (let i = 0; i < types.length; i++) {
-    types[i].addEventListener('click', () => {
-        switch(types[i].innerText) {
-            case 'ALL':
-                sessionStorage.setItem("selection", 'ALL');
-                break;
-            case 'EASYCARE':
-                sessionStorage.setItem("selection", 'EASYCARE');
-                break;
-            case 'FUSSY':
-                sessionStorage.setItem("selection", 'FUSSY');
-                break;
-            case 'FLOWERING':
-                sessionStorage.setItem("selection", 'FLOWERING');
-                break;
-            case 'FOLIAGE':
-                sessionStorage.setItem("selection", 'FOLIAGE');
-                break;
-            case 'SUCCULENTS & CACTI':
-                sessionStorage.setItem("selection", 'SUCCULENTS');
-        }
-
-    })
-};
-
 if (sessionStorage.getItem("selection")) {
     defaultSelection = sessionStorage.getItem("selection");
     switch(defaultSelection) {
@@ -80,6 +55,8 @@ if (sessionStorage.getItem("selection")) {
             case 'SUCCULENTS':
                 currentFilter = succulents;
         }
+} else {
+    currentFilter = indoor;
 }
 
 
