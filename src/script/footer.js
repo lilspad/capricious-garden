@@ -25,7 +25,7 @@ tr2.innerHTML = '<td><p class="join-col">Join our newsletter to receive weekly p
 '<a>FAQ</a><a>T&Cs</a><a>Privacy Policy</a></nav></td>';
 
 var tr3 = document.createElement('tr');
-tr3.innerHTML = '<td></td><td class="visit"> Capricious Garden Centre <br /> 23-27 Fickle Avenue <br /> NE6 1CG, Garden City </td> <td class="info"> 020 456 789 <br /> customerservice@capricious.co.uk </td>';
+tr3.innerHTML = '<td></td><td class="visit"> Capricious Plant Centre <br /> 23-27 Fickle Avenue <br /> NE6 1CG, Garden City </td> <td class="info"> 020 456 789 <br /> customerservice@capricious.co.uk </td>';
 
 var tbody = document.createElement('tbody');
 

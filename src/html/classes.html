@@ -33,7 +33,7 @@
         <div class="secondary">
             <div class="img-container"><img src="../media/classes.jpg"></div>
             <h2>SHARING IS CARING</h2>
-            <p>Our love for plants extends beyond the walls of our garden centre. We take every opportunity to share our knowledge
+            <p>Our love for plants extends beyond the walls of our plant centre. We take every opportunity to share our knowledge
             and help every plant parent care for their babies the best they can. To make even more plants happy, we've accomadated 
             many, many classes for begginners and advanced plant parents alike. Want to help your plants thrive? Pop over to any of 
             the listed classes - no need to register or book, we can sign you up on site! </p>
@@ -62,6 +62,7 @@
     <script type="text/javascript" >document.getElementById('logo').href = '../../index.html';</script>
     <script type="text/javascript" src="../script/footer.js"></script>
     <script type="text/javascript">
+
         const eventsFeb = [
             {start: '2023-02-01T16:00:00', end: '2023-02-01T17:30:00', name: 'Terrariums 101', id: 2,
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
@@ -156,7 +157,101 @@
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
         ];
 
-        const eventsData = [...eventsFeb, ...eventsMarch];
+        const eventsApr = [
+            {start: '2023-04-01T16:00:00', end: '2023-04-01T17:30:00', name: 'Terrariums 101', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-04T10:00:00', end: '2023-04-04T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-04T13:00:00', end: '2023-04-04T14:30:00', name: 'Terrariums 101', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-05T10:00:00', end: '2023-04-05T12:00:00', name: 'Orchid Care', id: 4,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-06T16:30:00', end: '2023-04-06T17:30:00', name: 'How To - Repot', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-08T16:00:00', end: '2023-04-08T17:30:00', name: 'Terrariums 201', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-09T10:00:00', end: '2023-04-09T12:00:00', name: 'Orchid Care', id: 4,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-09T16:00:00', end: '2023-04-09T18:00:00', name: 'In Depth - Substrate', id: 6,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-11T10:00:00', end: '2023-04-11T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-11T13:00:00', end: '2023-04-11T14:30:00', name: 'Terrariums 201', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-13T16:30:00', end: '2023-04-13T17:30:00', name: 'How to - Not overwater!', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+            {start: '2023-04-15T16:00:00', end: '2023-04-15T17:30:00', name: 'Terrariums 301', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-18T10:00:00', end: '2023-04-18T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-18T13:00:00', end: '2023-04-18T14:30:00', name: 'Terrariums 301', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-19T10:00:00', end: '2023-04-19T12:00:00', name: 'African Violet Care', id: 5,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-20T16:30:00', end: '2023-04-20T17:30:00', name: 'How to - Fertilise', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+            {start: '2023-04-22T16:00:00', end: '2023-04-22T17:30:00', name: 'Terrariums 401', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-23T10:00:00', end: '2023-04-23T12:00:00', name: 'African Violet Care', id: 5,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-23T16:00:00', end: '2023-04-23T18:00:00', name: 'In Depth - Propagation', id: 6,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-25T10:00:00', end: '2023-04-25T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-25T13:00:00', end: '2023-04-25T14:30:00', name: 'Terrariums 401', id: 2,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-04-27T16:30:00', end: '2023-04-27T17:30:00', name: 'How to - Prune', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+        ];
+
+        const eventsMay = [
+            {start: '2023-05-01T16:00:00', end: '2023-05-01T17:30:00', name: 'Bonsais 101', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-04T10:00:00', end: '2023-05-04T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-04T13:00:00', end: '2023-05-04T14:30:00', name: 'Bonsais 101', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-05T10:00:00', end: '2023-05-05T12:00:00', name: 'Ficus Care', id: 41,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-06T16:30:00', end: '2023-05-06T17:30:00', name: 'How To - Repot', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-08T16:00:00', end: '2023-05-08T17:30:00', name: 'Bonsais 201', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-09T10:00:00', end: '2023-05-09T12:00:00', name: 'Ficus Care', id: 41,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-09T16:00:00', end: '2023-05-09T18:00:00', name: 'In Depth - Substrate', id: 6,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-11T10:00:00', end: '2023-05-11T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-11T13:00:00', end: '2023-05-11T14:30:00', name: 'Bonsais 201', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-13T16:30:00', end: '2023-05-13T17:30:00', name: 'How to - Not overwater!', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+            {start: '2023-05-15T16:00:00', end: '2023-05-15T17:30:00', name: 'Bonsais 301', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-18T10:00:00', end: '2023-05-18T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-18T13:00:00', end: '2023-05-18T14:30:00', name: 'Bonsais 301', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-19T10:00:00', end: '2023-05-19T12:00:00', name: 'Crsssula Care', id: 51,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-20T16:30:00', end: '2023-05-20T17:30:00', name: 'How to - Fertilise', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+            {start: '2023-05-22T16:00:00', end: '2023-05-22T17:30:00', name: 'Bonsais 401', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-23T10:00:00', end: '2023-05-23T12:00:00', name: 'Crsssula Care', id: 51,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-23T16:00:00', end: '2023-05-23T18:00:00', name: 'In Depth - Propagation', id: 6,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-25T10:00:00', end: '2023-05-25T12:00:00', name: 'Kid-friendly Gardening', id: 3,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-25T13:00:00', end: '2023-05-25T14:30:00', name: 'Bonsais 401', id: 21,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.'},
+            {start: '2023-05-27T16:30:00', end: '2023-05-27T17:30:00', name: 'How to - Prune', id: 1,
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat enim ut pulvinar eleifend. Pellentesque facilisis lacus nulla, eget sodales erat faucibus ut. Duis dictum nunc sed mauris imperdiet fermentum. Mauris tempor dapibus magna commodo lacinia.',},
+        ];
+
+        const eventsData = [...eventsFeb, ...eventsMarch, ...eventsApr, ...eventsMay];
 
         new Calendar({
             id: '#calendar',

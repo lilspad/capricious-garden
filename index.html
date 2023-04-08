@@ -6,7 +6,7 @@
 
     <meta charSet="UTF-8" />
 
-    <title>Capricious | Garden Centre</title>
+    <title>Capricious | Plant Centre</title>
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="icon" href="src/media/favicon.png" />
 
@@ -39,7 +39,7 @@
                 and effective communication that helps us understand their needs and respond accordingly. That's our secret to a centre full of healthy, happy babies.
             </p>
             <p>
-                We want to share our love and care for gardening, so as well as offering tips and guidance to anyone passing by, we hold regular garden classes both for 
+                We want to share our love and care for plants, so as well as offering tips and guidance to anyone passing by, we hold regular classes both for 
                 amateurs and seasoned planters!
             </p>
             <a class="button" href="src/html/classes.html"> Find out more </a>
@@ -49,13 +49,11 @@
     </div>
 
     <div class="shop-items">
-        <h1>HAVE A LOOK AT OUR INVENTORY</h1>
+        <h1>HAVE A LOOK AT OUR PLANTS</h1>
 
         <div class="plants box">
 
             <div class="indoor box" >
-
-                <h2>Indoor:</h2>
 
                 <div class="type box">
 
@@ -105,61 +103,7 @@
                 </div>
 
             </div>
-
-            <div class="outdoor box">
-
-                <h2>Outdoor:</h2>
-
-                <div class="type box">
-
-                    <div class="seasonal container">
-                        <a href="src/html/plants/outdoor.html">
-                            <img src="src/media/seasonal.jpg" >
-                            <h3 class="plant-type">SEEDS</h3>
-                        </a>
-                    </div>
-                    <div class="perennial container">
-                        <a href="src/html/plants/outdoor.html">
-                        <img src="src/media/perennial.jpg" >
-                        <h3 class="plant-type">PERENNIAL</h3>
-                        </a>
-                    </div>
-                    <div class="ornamental container">
-                        <a href="src/html/plants/outdoor.html">
-                            <img src="src/media/ornamental.jpg">
-                            <h3 class="plant-type">ORNAMENTAL</h3>
-                        </a>
-                    </div>
-
-                </div>
-
-                    
-                <h2>Supplies:</h2>
-
-                <div class="type box">
-
-                    <div class="pots container">
-                        <a href="src/html/supplies/pots.html">
-                            <img src="src/media/pots.jpg" >
-                            <h3>POTS</h3>
-                        </a>
-                    </div>
-                    <div class="tools container" >
-                        <a href="src/html/supplies/tools.html">
-                            <img src="src/media/tools.jpg">
-                            <h3>TOOLS</h3>
-                        </a>
-                    </div>
-                    <div class="substrate container" >
-                        <a href="src/html/supplies/substrate.html">
-                            <img src="src/media/substrate.jpg">
-                            <h3>SUBSTRATE & FOOD</h3>
-                        </a>
-                    </div>
-
-                </div>
- 
-            </div>      
+        
         </div>
     
 
@@ -173,7 +117,6 @@
     <script type="text/javascript" src="src/script/footer.js"></script>
     <script type="text/javascript">document.getElementById('img').setAttribute('href', 'src/media/indoor.jpg')</script>
     <script type="text/javascript" src="src/script/indoor-plants.js"></script>
-    <script type="text/javascript" src="src/script/outdoor-plants.js"></script>
     <script type="text/javascript"> 
         sessionStorage.clear();
 
@@ -198,14 +141,6 @@
             case 'SUCCULENTS & CACTI':
                 sessionStorage.setItem("selection", 'SUCCULENTS');
                 break;
-            case 'SEEDS':
-                sessionStorage.setItem("selection", 'SEEDS');
-                break;
-            case 'PERENNIAL':
-                sessionStorage.setItem("selection", 'PERENNIAL');
-                break;
-            case 'ORNAMENTAL':
-                sessionStorage.setItem("selection", 'ORNAMENTAL');
         }
 
     })
