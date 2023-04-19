@@ -1,5 +1,4 @@
-﻿id,img,scientific_name,common_name,type,care_level,price
-1,,Adiantum raddianum,Maidenhair Fern,foliage,fussy,8
+﻿1,,Adiantum raddianum,Maidenhair Fern,foliage,fussy,8
 2,,Aeschynanthus,Lipstick Plant,"foliage, flowering",easy,11
 4,,Aglaonema commutatum,Chinese Evergreen,foliage,easy,7
 5,,Alocasia amazonica,Elephant's Ear,foliage,fussy,10
@@ -28,7 +27,7 @@
 30,,Echinocereus spp.,Hedgehog Cactus,succulent,easy,5
 31,,Echinopsis chamaecereus ,Peanut Cactus,succulent,easy,8
 32,,Epipremnum aureum,Pothos,foliage,easy,9
-33,,"	Euphorbia tirucalli",Pencil Cactus,succulent,easy,10
+33,,Euphorbia tirucalli,Pencil Cactus,succulent,easy,10
 34,,Fenestraria rhopalophylla ,Baby Toes,succulent,easy,5
 35,,Ficus benjamina,Weeping Fig,foliage,fussy,12
 36,,Ficus elastica,Rubber Plant,foliage,easy,9
