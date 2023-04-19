@@ -3,7 +3,7 @@ var logo = document.createElement('a');
 logo.classList.add('logo');
 
 logo.id = 'logo';
-logo.href = 'index.html';
+logo.href = 'https://capricious.netlify.app/';
 logo.innerHTML = '<i class="fa-brands fa-pagelines" /> <h2>CAPRICIOUS</h2>';
 
 var menu = document.createElement('div');
