@@ -8,7 +8,7 @@
 
 body {
     background-color: #F3F7F0;
-    
+    overflow-x: hidden;
 }
 
 header {
@@ -88,7 +88,7 @@ header {
 
 .video-container {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     z-index: -5;
     overflow: hidden;
@@ -110,8 +110,9 @@ header {
     background: #19323C88;
     color: #F3F7F0;
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     text-align: left; 
+    overflow: hidden;
 }
 
 .banner h1 {
@@ -210,6 +211,61 @@ header {
     justify-content: space-evenly;
 }
 
+.mix-banner {
+    display: flex;
+    background-color: #F9A03F;
+    color: white;
+    max-width: 100vw;
+    height: 600px;
+    overflow: hidden;
+}
+
+.mix {
+    background-image: url('../media/ingredients.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mix.content {
+    height: 100%;
+    color: white;
+    background: #501537AA;
+}
+
+.mix.content h1 {
+    font-size: 8rem;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.mix.content h2 {
+    width: 60%;
+    padding-left: 20%;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.mix p {
+    background-color: #19323C;
+    color: white;
+    padding: 8% 10%;
+    margin: auto;
+}
+
+.mix-caption {
+    font-size: 1.5rem;
+    padding: 5vw;
+    max-width: 40vw;
+}
+
+.mix-caption a {
+    color:#501537;
+}
+
+.mix-caption a:hover {
+    color: white;
+}
+
 
 footer {
     background-color: #eaf1e4;
@@ -302,3 +358,4 @@ table nav {
     margin: 0px 20px;
     margin-bottom: 0;
 }
+
