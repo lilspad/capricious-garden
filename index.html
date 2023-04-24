@@ -58,20 +58,20 @@
                 <div class="type box">
 
                     <div class="all container">
-                        <a href="src/html/plants/indoor.html">
+                        <a href="src/html/plants/plants.html">
                             <img src="src/media/all.jpg">
                             <h3 class="plant-type">ALL</h3>
                         </a>
                     </div>
                     
                     <div class="easycare container">
-                        <a href="src/html/plants/indoor.html">
+                        <a href="src/html/plants/plants.html">
                             <img src="src/media/easy.jpg">
                             <h3 class="plant-type">EASYCARE</h3>
                         </a>
                     </div>
                     <div class="fussy container" >
-                        <a href="src/html/plants/indoor.html">
+                        <a href="src/html/plants/plants.html">
                             <img src="src/media/fussy.jpg">
                             <h3 class="plant-type">FUSSY</h3>
                         </a>
@@ -82,19 +82,19 @@
                 <div class="type box">
 
                     <div class="flowering container">
-                        <a href="src/html/plants/indoor.html">
+                        <a href="src/html/plants/plants.html">
                             <img src="src/media/flowering.jpg">
                             <h3 class="plant-type">FLOWERING</h3>
                         </a>
                     </div>
                     <div class="foliage container" >
-                        <a href="src/html/plants/indoor.html">
+                        <a href="src/html/plants/plants.html">
                             <img src="src/media/foliage.jpg">
                             <h3 class="plant-type">FOLIAGE</h3>
                         </a>
                     </div>
                     <div class="succulent container" >
-                        <a href="src/html/plants/indoor.html">
+                        <a href="src/html/plants/plants.html">
                             <img src="src/media/succu.jpg" >
                             <h3 class="plant-type">SUCCULENTS & CACTI</h3>
                         </a>
@@ -113,15 +113,21 @@
     </footer>
 
     <script type="text/javascript" src="src/script/header.js"></script>
-    <script type="text/javascript" >document.getElementById('logo').href = 'index.html';</script>
+
     <script type="text/javascript" src="src/script/footer.js"></script>
-    <script type="text/javascript">document.getElementById('img').setAttribute('href', 'src/media/indoor.jpg')</script>
-    <script type="text/javascript" src="src/script/indoor-plants.js"></script>
-    <script type="text/javascript"> 
+
+    <script type="text/javascript" src="src/script/plants-display.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById('logo').href = 'index.html';
+        document.getElementById('img').setAttribute('href', 'src/media/indoor.jpg')
+ 
         sessionStorage.clear();
 
+        var types = document.getElementsByClassName('plant-type');
+
         for (let i = 0; i < types.length; i++) {
-    types[i].addEventListener('click', () => {
+        types[i].addEventListener('click', () => {
         switch(types[i].innerText) {
             case 'ALL':
                 sessionStorage.setItem("selection", 'ALL');
