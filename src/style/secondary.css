@@ -251,39 +251,6 @@
     position: fixed;
 }
 
-.mix {
-    background-image: url('../media/ingredients.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.mix.content {
-    height: 100%;
-    color: white;
-    background: #501537AA;
-}
-
-.mix.content h1 {
-    font-size: 8rem;
-    padding-left: 20%;
-    padding-top: 5%;
-}
-
-.mix.content h2 {
-    width: 60%;
-    padding-left: 20%;
-    text-align: left;
-    line-height: 2rem;
-}
-
-.mix p {
-    background-color: #19323C;
-    color: white;
-    padding: 8% 10%;
-    margin: auto;
-}
-
 #wood {
     background-color: #F9A03F;
     height: 85vh;
