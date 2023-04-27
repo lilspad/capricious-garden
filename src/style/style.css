@@ -152,7 +152,7 @@ header {
 }
 
 .shop-items {
-    padding: 20px;
+    padding: 80px 40px;
     color: #19323C;
 }
 
@@ -173,7 +173,7 @@ header {
     justify-content: center;
 }
 
-.indoor, .outdoor {
+.indoor {
     flex-direction: column;
 }
 
@@ -186,7 +186,7 @@ header {
     font-weight: 100;
     line-height: 200px;
     vertical-align: middle;
-    border-radius: 3px;
+    border-radius: 10px;
     transition: all 0.3s;
 }
 
@@ -196,7 +196,7 @@ header {
     width: 100%;
     z-index: -10;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .container:hover {
@@ -266,6 +266,35 @@ header {
     color: white;
 }
 
+.about-banner {
+    background-color: white;
+    max-width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.about-banner h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 2.5rem;
+}
+
+.about-banner p {
+    padding: 60px 12vw;
+    font-size: 1.2rem;
+}
+
+.about-banner div {
+    width: 300px;
+    margin: auto;
+}
+
+.about-banner div .button {
+    width: 100%;
+    margin: auto;
+}
 
 footer {
     background-color: #eaf1e4;
